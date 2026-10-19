@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Process powershell -ArgumentList \"-NoExit\", \"-Command\", \"cd 'c:\\\\Users\\\\ab\\\\podium-club-manager-fixed\\\\server'; npm run dev\")",
+      "PowerShell($localIP = \\(Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.IPAddress -notmatch '^\\(127\\\\.|169\\\\.\\)' } | Sort-Object PrefixLength | Select-Object -First 1 -ExpandProperty IPAddress\\); Write-Host \"IP locale : $localIP\")",
+      "PowerShell(Start-Sleep -Seconds 3; try { $r = Invoke-WebRequest -Uri \"http://localhost:5000/api/health\" -UseBasicParsing; Write-Host \"API OK: $\\($r.Content\\)\" } catch { Write-Host \"Erreur: $_\" }; try { $r2 = Invoke-WebRequest -Uri \"http://localhost:5000\" -UseBasicParsing; Write-Host \"Frontend OK: $\\($r2.StatusCode\\)\" } catch { Write-Host \"Erreur frontend: $_\" })"
+    ]
+  }
+}
