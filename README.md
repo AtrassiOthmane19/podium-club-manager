@@ -12,6 +12,28 @@ Podium Club Manager is a web application for managing day-to-day operations at a
 - User administration for admins, with page access controlled by role (admin, cashier, receptionist, and coach).
 - JWT-based sign-in and protected API routes.
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard overview with membership and subscription metrics, revenue charts, and upcoming expirations](server/screenshots/DASH.png)
+
+### Member Directory
+
+![Member directory showing member records, contact details, and statuses](server/screenshots/MEMEBRES.png)
+
+### Subscription Management
+
+![Subscription list with member plans, dates, payment status, and renewal actions](server/screenshots/ABONNMEMENT.png)
+
+### Payment Entry
+
+![Payment history with the new payment form open](server/screenshots/PAIMENT.png)
+
+### Sign-In
+
+![Podium Club Manager sign-in form](server/screenshots/LOGIN.png)
+
 ## Tech Stack
 
 - Frontend: React 19, React Router, Vite, Tailwind CSS, Axios, Recharts, date-fns, and Lucide React.
